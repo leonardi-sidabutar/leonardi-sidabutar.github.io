@@ -99,3 +99,11 @@ function asideSectionTogglerBtn()
         allSelection[i].classList.toggle("open");
     }
 }
+
+// Tahun Lahir
+const date = new Date();
+const year = date.getFullYear();
+const thn = 2000
+const umur = year - thn;
+const usia = document.getElementById('umur').textContent = umur;
+const tahun = document.getElementById('thn').textContent = thn;
