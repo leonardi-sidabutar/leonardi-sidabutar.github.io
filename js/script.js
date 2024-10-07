@@ -107,3 +107,35 @@ const thn = 2000
 const umur = year - thn;
 const usia = document.getElementById('umur').textContent = umur;
 const tahun = document.getElementById('thn').textContent = thn;
+
+
+// Function to open the modal
+function openModal(imageSrc, description, linkURL) {
+  var modal = document.getElementById("portfolioModal");
+  var modalImg = document.getElementById("modalImg");
+  var modalDescription = document.getElementById("modalDescription");
+  var modalLink = document.getElementById("modalLink");
+
+  // Set the image, description, and link in the modal
+  modalImg.src = imageSrc;
+  modalDescription.innerHTML = description;
+  modalLink.href = linkURL;
+
+  // Show the modal
+  modal.style.display = "flex";
+}
+
+// Function to close the modal
+var closeBtn = document.getElementsByClassName("close")[0];
+closeBtn.onclick = function() {
+  var modal = document.getElementById("portfolioModal");
+  modal.style.display = "none";
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+  var modal = document.getElementById("portfolioModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

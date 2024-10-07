@@ -291,6 +291,19 @@
                 </div>
             </section>
             <!-- Service Section End -->
+
+            <!-- Modal (Popup) -->
+            <div id="portfolioModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <!-- Wrap image with anchor tag -->
+                <a id="modalLink" href="#" target="_blank">
+                    <img id="modalImg" class="modal-img" src="" alt="">
+                </a>
+                <div id="modalDescription" class="modal-description"></div>
+            </div>
+            </div>
+
             <!-- Portofolio Section start -->
             <section class="portofolio section" id="portofolio">
                 <div class="container">
@@ -306,87 +319,94 @@
                     </div>
                     <div class="row">
                         <!-- Portofolio Item start -->
-                        <div class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-2.png', 'Website E-Commerce Produk S3INDONESIA', '')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://zelene.id" target="_blank" class="portofolio-item padd-15">
-                            <div class="portofolio-item-inner shadow-dark">
-                                <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-3.png" alt="">
+                                    <img src="img/portofolio/portofolio-2.png" alt="Portfolio 2">
                                 </div>
                             </div>
                         </a>
-                        <a href="https://agen.zelene.co.id" target="_blank" class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-3.png', 'Website E-Commerce Produk ZELENE', 'https://zelene.id')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-4.png" alt="">
+                                    <img src="img/portofolio/portofolio-3.png" alt="Portfolio 3">
                                 </div>
                             </div>
                         </a>
-                        <div class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-4.png', 'Page untuk Menampilkan Data Reseller Menggunakan API yang diEmbed pada halaman HTML', '#')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-5.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portofolio-item padd-15">
-                            <div class="portofolio-item-inner shadow-dark">
-                                <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://leonardi-sidabutar.github.io/leon-movie" target="_blank" class="portofolio-item padd-15">
-                            <div class="portofolio-item-inner shadow-dark">
-                                <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-7.png" alt="">
+                                    <img src="img/portofolio/portofolio-4.png" alt="Portfolio 4">
                                 </div>
                             </div>
                         </a>
-                        <a href="https://country-search-leonardis-projects.vercel.app" target="_blank" class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-5.png', 'Dashbaord Admin Untuk memonitoring Pemesanan Produk S3INDONESIA', '#')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-8.png" alt="">
+                                    <img src="img/portofolio/portofolio-5.png" alt="Portfolio 5">
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.ptpn4apps.id/ptpn4_teh/public/" target="_blank" class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-1.png', 'Dashbaord Rotator Untuk melakukan Rotasi Pada Link WhatsApp Admin Pemesanan Produk S3INDONESIA', '#')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-9.png" alt="">
+                                    <img src="img/portofolio/portofolio-1.png" alt="Portfolio 5">
                                 </div>
                             </div>
                         </a>
-                        <a href="#" onClick="alert('Sorry, this link is still used by related companies for privacy reasons')" class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-7.png', 'Website Movie Untuk Melihat LIST Movie yang di fetching menggunakan API OMDB', '#')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-10.png" alt="">
+                                    <img src="img/portofolio/portofolio-7.png" alt="Portfolio 5">
                                 </div>
                             </div>
                         </a>
-                        <a href="#" onClick="alert('Sorry, this Repository is still used by related companies for privacy reasons')" class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-8.png', 'Website Application Untuk Melakukan Search Country yang di fetching menggunakan API RestCountries', 'https://country-search-leonardis-projects.vercel.app')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-11.png" alt="">
+                                    <img src="img/portofolio/portofolio-8.png" alt="Portfolio 5">
                                 </div>
                             </div>
                         </a>
-                        <a href="#" onClick="alert('Sorry, this Repository is still used by related companies for privacy reasons')" class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-9.png', 'Dashboard Ritel Teh Untuk melakukan Monitoring Penjualan Produk Komoditi TEH di PTPN4 Regional II', 'https://www.ptpn4apps.id/ptpn4_teh/public/')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-12.png" alt="">
+                                    <img src="img/portofolio/portofolio-9.png" alt="Portfolio 5">
                                 </div>
                             </div>
                         </a>
-                        <a href="#" onClick="alert('Sorry, this Repository is still used by related companies for privacy reasons')" class="portofolio-item padd-15">
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-10.png', 'Web Application Untuk Melakukan Registrasi Akun Pilot Drone', '')">
                             <div class="portofolio-item-inner shadow-dark">
                                 <div class="portofolio-img">
-                                    <img src="img/portofolio/portofolio-13.png" alt="">
+                                    <img src="img/portofolio/portofolio-10.png" alt="Portfolio 5">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-11.png', 'Dashboard + Mobile Application Untuk melakukan Monitoring dengan Metode PICA (Problem Identification and Corrective Action) Seluruh Blok Kebun Areal PALMCO', '')">
+                            <div class="portofolio-item-inner shadow-dark">
+                                <div class="portofolio-img">
+                                    <img src="img/portofolio/portofolio-11.png" alt="Portfolio 5">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-12.png', 'CRM Weight Bridge adalah Dashboard Web Application + Scheduler Automation Transfer Data Timbangan Seluruh PKS Regional II', '')">
+                            <div class="portofolio-item-inner shadow-dark">
+                                <div class="portofolio-img">
+                                    <img src="img/portofolio/portofolio-12.png" alt="Portfolio 5">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-13.png', 'Doctrace V2 adalah Dashboard Web Application Untuk Memonitoring RKAP Realisasi Bahan di seluruh PKS Regional II', '')">
+                            <div class="portofolio-item-inner shadow-dark">
+                                <div class="portofolio-img">
+                                    <img src="img/portofolio/portofolio-13.png" alt="Portfolio 5">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="portofolio-item padd-15" onclick="openModal('img/portofolio/portofolio-14.png', 'Dashboard Sales Pemasaran Untuk Memonitoring Penjualan Komoditi Sawit di Regional II', '')">
+                            <div class="portofolio-item-inner shadow-dark">
+                                <div class="portofolio-img">
+                                    <img src="img/portofolio/portofolio-14.png" alt="Portfolio 5">
                                 </div>
                             </div>
                         </a>
