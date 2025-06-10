@@ -1028,3 +1028,10 @@ h3.my-profession
     cursor: pointer;
   }
   
+  .stack{
+    display: flex;
+    align-items: center;
+  }
+  .stack img{
+    margin-right: 8px;
+  }
